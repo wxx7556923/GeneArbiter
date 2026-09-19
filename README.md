@@ -1,4 +1,4 @@
-# GeneArbiter 0.4.0 发布候选版
+# GeneArbiter
 
 
 
