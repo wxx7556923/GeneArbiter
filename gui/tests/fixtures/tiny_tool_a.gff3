@@ -1,0 +1,7 @@
+##gff-version 3
+chr1	ToolA	gene	100	500	.	+	.	ID=toolA_gene1
+chr1	ToolA	mRNA	100	500	.	+	.	ID=toolA_gene1.t01;Parent=toolA_gene1
+chr1	ToolA	exon	100	200	.	+	.	ID=toolA_gene1.t01.exon1;Parent=toolA_gene1.t01
+chr1	ToolA	exon	300	500	.	+	.	ID=toolA_gene1.t01.exon2;Parent=toolA_gene1.t01
+chr1	ToolA	CDS	120	200	.	+	0	ID=toolA_gene1.t01.cds1;Parent=toolA_gene1.t01
+chr1	ToolA	CDS	300	470	.	+	2	ID=toolA_gene1.t01.cds2;Parent=toolA_gene1.t01

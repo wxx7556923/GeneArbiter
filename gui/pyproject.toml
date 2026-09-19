@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genearbiter-gui"
+version = "0.4.0"
+license = {text = "MIT"}
+description = "Windows desktop interface for GeneArbiter"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6,<7",
+  "PySide6>=6.8,<7",
+]
+
+[project.optional-dependencies]
+build = ["PyInstaller>=6.10,<7"]
+
+[project.scripts]
+genearbiter = "genearbiter.cli:main"
+genearbiter-gui = "genearbiter_gui.app:main"
+
+[tool.setuptools.packages.find]
+include = ["genearbiter*", "genearbiter_gui*"]

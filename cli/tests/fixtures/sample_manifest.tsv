@@ -1,0 +1,2 @@
+sample_id	species	cultivar	tissue	developmental_stage	treatment	replicate	platform	read_type	library_strategy	strandedness	accession	bam_or_fastq	genome_version	annotation_version	notes
+sample1	tiny	NA	leaf	NA	control	1	Illumina	short_read	RNA-seq	unstranded	NA	NA	tiny_v1	tiny_gff	fixture

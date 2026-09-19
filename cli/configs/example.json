@@ -1,0 +1,82 @@
+{
+  "project": {
+    "name": "example_genearbiter_run",
+    "root": "..",
+    "run_id": "example_cli"
+  },
+  "strict_input_check": true,
+  "gffs": [
+    {
+      "name": "current",
+      "path": "tests/fixtures/tiny_current.gff3"
+    },
+    {
+      "name": "ToolA",
+      "path": "tests/fixtures/tiny_tool_a.gff3"
+    },
+    {
+      "name": "ToolB",
+      "path": "tests/fixtures/tiny_tool_b.gff3"
+    }
+  ],
+  "evidence": [],
+  "params": {
+    "candidate_set_mode": "structure_consensus",
+    "ai_soft_locus_bp": 50000,
+    "ai_hard_locus_bp": 100000,
+    "max_ai_current_genes_in_long_window": 3,
+    "max_ai_models_per_source_in_long_window": 3
+  },
+  "api": {
+    "profile": "local_rule",
+    "run_label": "local_debug",
+    "workers": 1,
+    "max_attempts": 1,
+    "timeout": 180,
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "api_key_env": ""
+  },
+  "outputs": {
+    "run_dir": "runs/example_v0_3",
+    "strategy": "genearbiter_default"
+  },
+  "export": {
+    "source_label": "GeneArbiter",
+    "sort_records": true,
+    "reconcile_ids": true,
+    "new_gene_prefix": "GeneArbiterG",
+    "one_to_one_policy": "reuse_current_gene_id",
+    "transcript_template": "{gene_id}.t{index:02d}",
+    "force_reconcile": true
+  },
+  "review": {
+    "mode": "auto"
+  },
+  "preprocess": {
+    "normalize_gffs": true
+  },
+  "scoring": {
+    "normalization": "run_level"
+  },
+  "policy_export": {
+    "enabled": true,
+    "policy": "supported_novel_singletool_junction_supported",
+    "reconcile_ids": true,
+    "new_gene_prefix": "GeneArbiterG",
+    "one_to_one_policy": "reuse_current_gene_id",
+    "transcript_template": "{gene_id}.t{index:02d}",
+    "force_reconcile": true,
+    "output_gff_name": "policy_named_annotation.gff3",
+    "clean_gff_name": "policy_named_annotation.auto_pass.clean.gff3",
+    "gtf_name": "policy_named_annotation.auto_pass.hisat.gtf"
+  },
+  "release_gff_qc": {
+    "enabled": true,
+    "transcript_template": "{gene_id}.t{index:02d}",
+    "exon_template": "{transcript_id}.exon{index:03d}",
+    "output_gff_name": "release_annotation.gff3",
+    "clean_gff_name": "release_annotation.clean.gff3",
+    "force": true
+  }
+}

@@ -1,0 +1,7 @@
+##gff-version 3
+chr1	current	gene	100	500	.	+	.	ID=cur_gene1
+chr1	current	mRNA	100	500	.	+	.	ID=cur_gene1.t01;Parent=cur_gene1
+chr1	current	exon	100	200	.	+	.	ID=cur_gene1.t01.exon1;Parent=cur_gene1.t01
+chr1	current	exon	300	500	.	+	.	ID=cur_gene1.t01.exon2;Parent=cur_gene1.t01
+chr1	current	CDS	120	200	.	+	0	ID=cur_gene1.t01.cds1;Parent=cur_gene1.t01
+chr1	current	CDS	300	470	.	+	2	ID=cur_gene1.t01.cds2;Parent=cur_gene1.t01

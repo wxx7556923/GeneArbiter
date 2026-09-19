@@ -1,0 +1,7 @@
+##gff-version 3
+chr1	ToolB	gene	100	530	.	+	.	ID=toolB_gene1
+chr1	ToolB	mRNA	100	530	.	+	.	ID=toolB_gene1.t01;Parent=toolB_gene1
+chr1	ToolB	exon	100	200	.	+	.	ID=toolB_gene1.t01.exon1;Parent=toolB_gene1.t01
+chr1	ToolB	exon	330	530	.	+	.	ID=toolB_gene1.t01.exon2;Parent=toolB_gene1.t01
+chr1	ToolB	CDS	120	200	.	+	0	ID=toolB_gene1.t01.cds1;Parent=toolB_gene1.t01
+chr1	ToolB	CDS	330	500	.	+	2	ID=toolB_gene1.t01.cds2;Parent=toolB_gene1.t01

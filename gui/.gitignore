@@ -1,0 +1,8 @@
+.venv-windows/
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+release/GeneArbiter-Windows-x64-*.zip
+release/GeneArbiter-Windows-x64-*.zip.sha256
