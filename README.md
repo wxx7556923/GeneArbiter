@@ -1,6 +1,6 @@
 # GeneArbiter
 
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23113893.svg)](https://doi.org/10.5281/zenodo.23113893)
 
 | 版本 | 内容 | 入口 |
 | --- | --- | --- |
